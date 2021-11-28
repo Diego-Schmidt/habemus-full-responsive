@@ -9,8 +9,9 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-image: url(../assets/bg.webp);
-    background-repeat: no-repeat;
-	background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: space;
+    background-size: cover;
 }
 
 header {
@@ -54,41 +55,10 @@ header {
 
 /* fin keyframes animación logo */
 
-/* Animación --> Pedí Online <-- (Es un concepto)*/
-.pedi-online {
-	        animation: pedi-online 1s 8s 5 both;
-}
 
-
-   @keyframes pedi-online {
-    0% {
-              transform: scale3d(1, 1, 1);
-    }
-    30% {
-              transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-              transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-              transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-              transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-              transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-              transform: scale3d(1, 1, 1);
-    }
-  }
-  
-
-/* Animación para imágenes grandes en portada */
+/* Keyframes Animación para imágenes grandes en portada */
 
 .fade-in-imagenes {
-	-webkit-animation: fade-in-imagenes 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: fade-in-imagenes 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
@@ -127,10 +97,81 @@ header {
     padding-left: 1rem;
 }
 
+/* estilo para fotos y letras tabla menú */
+.imgmenu {
+	width: 70%;
+	margin: auto;
+    display: block;
+}
+.tablamenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.tablamenumob{
+    display: none;
+}
+
+
 main{
  /*   display: flex; */
     align-items: center;
     justify-content: center;
+}
+
+.servicios{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+	padding: 30px 0 30px 0;
+	height: 60%;
+}
+
+/* estilo para el texto descriptivo de servicios */
+.mainservicios{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+	padding: 30px 0 30px 0;
+    height: 60%;
+}
+
+.textoservicios{
+    background-color: rgba(26, 18, 6, 0.877);
+	position: absolute;
+    width:40%;
+	height: 80%;
+/*	overflow: scroll; */
+	top: 10%;
+    left: 5%;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1rem;
+    
+}
+
+.textoservicios2{
+    background-color: rgba(26, 18, 6, 0.877);
+	position: absolute;
+    width:40%;
+	height: 30%;
+/*	overflow: scroll; */
+	top: 10%;
+    left: 50%;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1rem;
+    
+}
+
+.pedionline{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+	padding-top: 90px;
+	width: 100%;
+	height: 20%;
 }
 
 .slideshow{
@@ -158,6 +199,15 @@ main{
 	padding: 30px 0 30px 0;
 }
 
+.somosespcont{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+	padding-top: 90px;
+	width: 100%;
+	height: 20%;
+}
+
 .textoapp{
     background-color: rgba(87, 83, 76, 0.459);
 	position: absolute;
@@ -169,6 +219,20 @@ main{
 	color: white;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.5rem;
+}
+
+.textoapp2{
+    background-color: rgba(87, 83, 76, 0.459);
+	position: absolute;
+    width:30%;
+	height: 30%;
+	overflow: hidden;
+	top: 40%;
+    left: 10%;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1rem;
+    
 }
 
 /* Estilos para el formulario de contacto*/
@@ -330,8 +394,13 @@ input[type="submit"].formulario-btn-block, input[type="reset"].formulario-btn-bl
     width: 100%;
 }
 
-/* estilo para el formulario de contacto */
+/* fin estilo para el formulario de contacto */
 
+/* Etiqueta de precio */
+
+
+
+/* Fin etiqueta de precio */
 
 /*  Botones del menú principal*/
 
@@ -462,6 +531,22 @@ footer {
         justify-content: center;
         padding: 0 0 20px 20%;
     }
+    .menutabla{
+        display: none;
+    }
+    .tablamenumob{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-flow: column;
+    }
+    .imgmenu {
+        width: 100%;
+        margin: auto;
+        display: inline-block;
+        padding: 2px 0 2px 0;
+    }
 }
 @media (max-width: 320px) {
     .burger{
@@ -474,5 +559,21 @@ footer {
         background-attachment: fixed;
         background-repeat: space;
         background-size: cover;
+    }
+    .menutabla{
+        display: none;
+    }
+    .tablamenumob{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-flow: column;
+    }
+    .imgmenu {
+        width: 100%;
+        margin: auto;
+        display: inline-block;
+        padding: 2px 0 2px 0;
     }
 }
