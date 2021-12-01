@@ -15,27 +15,6 @@ body{
     animation: bodyan 5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
 
-@keyframes bodyan {
-    0% {
-      -webkit-transform: rotateX(-100deg);
-              transform: rotateX(-100deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 1;
-    }
-  }
-  
-
-
-
-
 header {
 	width: 100%;
 	clear: both;
@@ -51,51 +30,6 @@ header {
     align-content: space-around;
     justify-content: center;
 }
-
-/* Entrada animada logo */
-
-.logo-left{
-    -webkit-animation: logo-left 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    animation: logo-left 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    
-}
-
-/* keyframes para la animación del logo*/
-
-  @keyframes logo-left {
-    0% {
-      transform: translateX(-1000px) rotate(-720deg);
-      filter: blur(50px);
-      opacity: 0;
-    }
-    100% {
-        transform: translateX(0) rotate(0deg);
-        filter: blur(0);
-        opacity: 1;
-    }
-  }
-
-/* fin keyframes animación logo */
-
-
-/* Keyframes Animación para imágenes grandes en portada */
-
-.fade-in-imagenes {
-	        animation: fade-in-imagenes 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-/* keyframes para la animación de imágenes en portada*/
-
-  @keyframes fade-in-imagenes {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-/* fin animación imágenes portada */
 
 .nav{
     width: 90%;
@@ -437,26 +371,6 @@ input[type="submit"].formulario-btn-block, input[type="reset"].formulario-btn-bl
   animation: prodim 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
 
-/* Animación para imagen de producto */
-
-@keyframes prodim {
-    0% {
-      transform: rotateX(-100deg);
-      transform-origin: top;
-      opacity: 0;
-    }
-    100% {
-      transform: rotateX(0deg);
-      transform-origin: top;
-      opacity: 1;
-    }
-  }
-  
-
-/* fin animación para imagen de producto */
-
-
-
 .enventa-section {
   position: absolute;
   top: -6px;
@@ -611,10 +525,102 @@ footer {
 .copy2{
         display: none;
     }
-.menumob{
+/* escondo el class menumob en versión desktop */
+    .menumob{
     display: none;
 }
-    @media (max-width: 824px) {
+
+
+/* animaciones del sitio */
+
+/* Entrada animada logo */
+
+.logo-left{
+    -webkit-animation: logo-left 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: logo-left 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    
+}
+
+  /* keyframes para la animación del logo*/
+
+  @keyframes logo-left {
+    0% {
+      transform: translateX(-1000px) rotate(-720deg);
+      filter: blur(50px);
+      opacity: 0;
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+        filter: blur(0);
+        opacity: 1;
+    }
+  }
+
+/* fin keyframes animación logo */
+
+
+/* keyframes para la animación del body */
+
+@keyframes bodyan {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  
+
+
+/* Keyframes Animación para imágenes grandes en portada */
+
+.fade-in-imagenes {
+	        animation: fade-in-imagenes 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* keyframes para la animación de imágenes en portada*/
+
+  @keyframes fade-in-imagenes {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+/* fin animación imágenes portada */
+
+/* Animación para imagen de producto */
+
+@keyframes prodim {
+    0% {
+      transform: rotateX(-100deg);
+      transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(0deg);
+      transform-origin: top;
+      opacity: 1;
+    }
+  }
+  
+/* fin animación para imagen de producto */
+
+/* Fin de animaciones del sito */
+
+/* Inicio de media queries */
+
+@media (max-width: 824px) {
         .menumob{
             display: flex;
             flex-flow: row;
@@ -641,115 +647,116 @@ footer {
         .menumob a{
             text-decoration: none;
         }
-    .nav__menu {
-      display: none;
+        .nav__menu {
+            display: none;
     }
-    .burger{
-        display: none;
+        .burger{
+            display: none;
     }
-    .centrado{
-        font-size: 1rem;
+        .centrado{
+            font-size: 1rem;
     }
-    .textoapp{
-        height: 40%;
-        overflow: scroll;
-        padding-bottom: 50px;
-        font-size: 1rem;
+        .textoapp{
+            height: 40%;
+            overflow: scroll;
+            padding-bottom: 50px;
+            font-size: 1rem;
     }
-    .copy{
-        display: none;
+        .copy{
+            display: none;
     }
-    .copy2{
-        font-size: 12px;
-        display: inline;
-        text-align: center;
+        .copy2{
+            font-size: 12px;
+            display: inline;
+            text-align: center;
     }
-    .footer1{
-        justify-content: space-around;
-        padding: 0 0 20px 20%; 
+        .footer1{
+            justify-content: space-around;
+            padding: 0 0 20px 20%; 
     }
-    .socmob{
-        display: inline;
+        .socmob{
+            display: inline;
     }
-    .footer2{
-        justify-content: center;
-        padding: 0 0 20px 20%;
+        .footer2{
+            justify-content: center;
+            padding: 0 0 20px 20%;
     }
-    .menutabla{
-        display: none;
+        .menutabla{
+            display: none;
     }
-    .tablamenumob{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
-    flex-flow: column;
+        .tablamenumob{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: space-around;
+            flex-flow: column;
     }
-    .imgmenu {
-        width: 100%;
-        margin: auto;
-        display: inline-block;
-        padding: 2px 0 2px 0;
+        .imgmenu {
+            width: 100%;
+            margin: auto;
+            display: inline-block;
+            padding: 2px 0 2px 0;
     }
 }
-@media (max-width: 320px) {
-    .burger{
-        display: none;
+    @media (max-width: 320px) {
+        .burger{
+            display: none;
     }
-    .nav__social{
-        display: none;
+        .nav__social{
+            display: none;
     }
-    .logo-left{
-        padding-left: 25px;
+        .logo-left{
+            padding-left: 25px;
     }
-    .menumob{
-        display: flex;
-        flex-flow: row;
-        align-items: center;
-        justify-content: space-around;
-        background-color: rgba(255, 174, 0, 0.6);
-        font-size: 21px;
-        text-align: center;
-        width:100%;
+        .menumob{
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgba(255, 174, 0, 0.6);
+            font-size: 21px;
+            text-align: center;
+            width:100%;
     }
-    .menumob__li{
-        display: inline-flex;
-        text-decoration: none;
-        padding: 0 5px 0 5px;
+        .menumob__li{
+            display: inline-flex;
+            text-decoration: none;
+            padding: 0 5px 0 5px;
 
     }
-    .menumob__li:hover{
-        color: seashell;
+        .menumob__li:hover{
+            color: seashell;
     }
-    .menumob__ul{
-        list-style-type: none;
-        display: inline-block;
+        .menumob__ul{
+            list-style-type: none;
+            display: inline-block;
     }
-    .menumob a{
-        text-decoration: none;
+        .menumob a{
+            text-decoration: none;
     }
-    .nav__social{
-        padding-right: 2px;
+        .nav__social{
+            padding-right: 2px;
     }
-    body{
-        background-attachment: fixed;
-        background-repeat: space;
-        background-size: cover;
+        body{
+            background-attachment: fixed;
+            background-repeat: space;
+            background-size: cover;
     }
-    .menutabla{
-        display: none;
+        .menutabla{
+            display: none;
     }
-    .tablamenumob{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
-    flex-flow: column;
+        .tablamenumob{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: space-around;
+            flex-flow: column;
     }
-    .imgmenu {
-        width: 100%;
-        margin: auto;
-        display: inline-block;
-        padding: 2px 0 2px 0;
+        .imgmenu {
+            width: 100%;
+            margin: auto;
+            display: inline-block;
+            padding: 2px 0 2px 0;
     }
 }
+
