@@ -12,7 +12,29 @@ body{
     background-attachment: fixed;
     background-repeat: space;
     background-size: cover;
+    animation: bodyan 5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
+
+@keyframes bodyan {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  
+
+
+
 
 header {
 	width: 100%;
@@ -405,14 +427,35 @@ input[type="submit"].formulario-btn-block, input[type="reset"].formulario-btn-bl
 }
 
 .producto-image {
-  background: #e9e9e9;
+ /* background: #e9e9e9; */
   position: relative;
-  min-height: 250px;
+  /* min-height: 250px; */
   width: 100%;
   margin: auto;
   display: inline-block;
   padding: 2px 0 2px 0;
+  animation: prodim 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
+
+/* Animación para imagen de producto */
+
+@keyframes prodim {
+    0% {
+      transform: rotateX(-100deg);
+      transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(0deg);
+      transform-origin: top;
+      opacity: 1;
+    }
+  }
+  
+
+/* fin animación para imagen de producto */
+
+
 
 .enventa-section {
   position: absolute;
