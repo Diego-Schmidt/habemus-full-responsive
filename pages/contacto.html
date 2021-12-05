@@ -1,178 +1,114 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1e26838a30.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <title>Habemus Papa! Contacto</title>
 </head>
 <body>
-    <header class="cabeza">
-        <div class="header">
-            <a href="../index.html">
-            <img class="logo-left" src="../assets/logo-header.png" alt="logohabemuspapa">
-            </a>
-        <!-- Menú burger no funcional, no nos enseñaron todavía :P -->
-        <div class="burger">
-            <a href="./pages/contacto.html"><img src="../assets/burger.png" alt="burgermenu" />
-            </a>
-        </div>
-        <nav class="menu">
-            <ul class="nav__menu">
-                <li class="nav__links">
-                    <span><a class="nav__links" href="../index.html">
-                        Inicio
-                    </a></span>
-                </li>
-                <li class="nav__links">
-                    <span><a class="nav__links" href="menu.html">
-                        Menú
-                    </a></span>
-                </li>
-                <li class="nav__links">
-                    <span><a class="nav__links" href="servicios.html">
-                        Servicios
-                    </a></span>
-                </li>
-                <li class="nav__links">
-                    <span><a class="nav__links" href="acercade.html">
-                        Acerca de
-                    </a></span>
-                </li>
-                <li class="nav__links">
-                    <span><a class="nav__links" href="contacto.html">
-                        Contacto
-                    </a></span>
-                </li>
-                
-            </ul>
-        </nav>
-        <div class="nav__social">
-            <img id="" src="../assets/whatsapp_black_24dp.svg" alt="nuestrowhatsapp" heigth=""/><img src="../assets/live_help_black_24dp.svg" alt="ayuda" heigth=""/>
-        </div>    
-    </div>
-    <div class="menumob">
-        <ul class="menumob__ul">
-        <li class="menumob__li">
-            <a href="../index.html">
-            Inicio
-            </a>
-    </li>
-    <li class="menumob__li">    
-            <a href="menu.html">
-            Menú
-        </a>
-       </li>
-    <li class="menumob__li">
-        <a href="servicios.html">
-            Servicios
-        </a>
-    </li>
-    <li class="menumob__li">
-        <a href="acercade.html">
-            Acerca de
-        </a>
-    </li>
-    <li class="menumob__li">
-        <a class="" href="contacto.html">
-            Contacto
-        </a>
-    </li>
-    
-</ul>
-    </div>
-    </header>
+    <div>
+        <!-- bootstrap nav -->
+        
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid cabeza ">
+              <a class="navbar-brand logo-left" href="index.html"><img src="../assets/logo-header.png" alt="habemuspapalogo" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ">
+                  <a class="nav-link active" aria-current="page" href="../index.html"><h4>Inicio</h4></a>
+                  <a class="nav-link" href="#"><h4>Menú</h4></a>
+                  <a class="nav-link" href="#"><h4>Servicios</h4></a>
+                  <a class="nav-link" href="#"><h4>Acerca de</h4></a>
+                  <a class="nav-link" href="contacto.html"><h4>Contacto</h4></a>
+                </div>
+              </div><img id="" src="../assets/shopping_cart_black_24dp.svg" alt="carritodecompras" heigth=""/>
+            </div>
+          </nav></div>
+          </header>
     <main>
-        <section class="contacto">
-            <section>
-                <!-- Formulario de contacto - no funcional basado en https://www.freecontactform.com/form-guides/html-email-form-->
-                <div class="formulario-body">
-                
-                    <div id="formulario-form">
-                    <h3 class="formulario-h3">Envíenos sus comentarios</h3>
-                
-                    <form id="formulario-form-id" class="formulario-form-class" method="post" action="contact-form-process.php">
-                        
-                        <div class="formulario-form-group">
-                            <label for="Name" class="formulario-label">Su nombre</label>
-                            <div class="formulario-input-group">
-                                <input type="text" id="Name" name="Name" class="formulario-form-control" required>
-                            </div>
-                        </div>
-                
-                        <div class="formulario-form-group">
-                            <label for="Email" class="formulario-label">Su email</label>
-                            <div class="formulario-input-group">
-                                <input type="email" id="Email" name="Email" class="formulario-form-control" required>
-                            </div>
-                        </div>
-                
-                        <div class="formulario-form-group">
-                            <label for="Message" class="formulario-label">Mensaje</label>
-                            <div class="formulario-input-group">
-                                <textarea id="Message" name="Message" class="formulario-form-control" rows="6" maxlength="3000" required></textarea>
-                            </div>
-                        </div>
-                
-                        <div class="formulario-form-group">
-                            <button type="submit" id="formulario-button" class="formulario-btn formulario-btn-primary formulario-btn-lg formulario-btn-block">Enviar mensaje</button>
-                        </div>
-                
-                        <div class="formulario-credit" id="formulario-credit">
-                        Le responderemos lo antes posible
-                        </div>
-                
-                    </form>
+        <section>
+            <!-- Formulario de contacto - no funcional basado en https://www.freecontactform.com/form-guides/html-email-form-->
+            
+            <div class="container  mt-5 mb-5">
+                <div class="row m-0">
+                  <div class="col-md-3 bg-custom p-0 d-flex text-center  justify-content-center flex-column display-none">
+                    <h3 class="mb-2">Info</h3>
+                    <div class="info text-light .fs-6">
+                      
+                        234,AR BS
+                        <p>info@habemuspapa.com</p>
+                        2932675489
+                      
+                      <div class="social-icons">
+                      </div>
                     </div>
-                
+                  </div>
+                  <div class="col-md-8 p-0 bg-custom2 pt-4 pb-4" >
+                    <h3 class="pl-4"></h3>
+                    <form class="w-100 p-4" action="#">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="mb-3">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Email" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="mb-3">
+                            <textarea  class="form-control" id="exampleFormControlInput2" placeholder="Mensaje" required rows="3"></textarea>
+                          </div>
+                         
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-custom btn-lg btn-block mt-3">Enviar</button>
+                    </form>
+                  </div>
+                  <div class="col-md-1 bg-white display-none ">
+                    <div class="social-icons">
+                      <i class="fa fa-facebook"></i>
+                      <i class="fa fa-twitter"></i>
+                      <i class="fa fa-pinterest"></i>
+                      <i class="fa fa-linkedin"></i>
+                    </div>
+                  </div>
                 </div>
-                <section class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d788.8189508716905!2d-62.07188552609235!3d-38.87159314778961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sar!4v1637021307606!5m2!1sen!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                  </section>
+              </div>
+          </section>
     </main>
-    <!-- Footer con grid -->
-    <footer class="footer">
-            <div class="footer1">
-                <nav class="menu">
-                    <ul class="nav__menu">
-                        <li class="nav__links">
-                            <span><a class="nav__links" href="../index.html">
-                                Inicio
-                            </a></span>
-                        </li>
-						<li class="nav__links">
-                            <span><a class="nav__links" href="menu.html">
-                                Menú
-                            </a></span>
-                        </li>
-						<li class="nav__links">
-                            <span><a class="nav__links" href="servicios.html">
-                                Servicios
-                            </a></span>
-                        </li>
-						<li class="nav__links">
-                            <span><a class="nav__links" href="acercade.html">
-                                Acerca de
-                            </a></span>
-                        </li>
-						<li class="nav__links">
-                            <span><a class="nav__links" href="contacto.html">
-                                Contacto
-                            </a></span>
-                        </li>
-                        
-                    </ul>
-                </nav>
-                <div class="socmob">
-                    <img id="" src="../assets/whatsapp_black_24dp.svg" alt="nuestrowhatsapp" heigth=""/><img src="../assets/live_help_black_24dp.svg" alt="ayuda" heigth=""/>
-                </div>
+    <footer>
+      <nav class="pie navbar navbar-expand-lg navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid cabeza ">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+              <a class="nav-link active" aria-current="page" href="index.html"><h4>Inicio</h4></a>
+              <a class="nav-link" href="./pages/menu.html"><h4>Menú</h4></a>
+              <a class="nav-link" href="./pages/servicios.html"><h4>Servicios</h4></a>
+              <a class="nav-link" href="./pages/acercade.html"><h4>Acerca de</h4></a>
+              <a class="nav-link" href="./pages/contacto.html"><h4>Contacto</h4></a>
             </div>
-            <div class="footer2">
-                <h1 class="copy">Habemus Papa! 2021</h1>
-                <h1 class="copy2">Habemus Papa! 2021</h1>
-            </div>
+            <a title="Ir arriba" href="#arriba"><i class="far fa-arrow-alt-circle-up"></i></a>
+            <div class="copy d-flex">Habemus Papa! 2021</div>
+          </div>
+          <img id="" src="../assets/whatsapp_black_24dp.svg" alt="nuestrowhatsapp" heigth=""/><img src="../assets/live_help_black_24dp.svg" alt="ayuda" heigth=""/>
+        </div>
     </footer>
+<!-- Cargamos el JS de bootstrap o no funca nada :P -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
 </body>
 </html>
