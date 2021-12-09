@@ -1,9 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
+
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-image: url(../assets/bg.webp);
     background-attachment: fixed;
     background-position: center;
@@ -206,6 +210,10 @@ li,h3{
         padding-left: 30%;
     }
      
+    .iconsoc{
+        padding: 6px;
+        animation: slide-in-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
     
 
 /* Fin formulario */
@@ -245,6 +253,36 @@ li,h3{
   }
 
   /* Fin animación del body */
+
+  /*  Animación íconos sociales junto al logo */
+  
+  @-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+  /*  Fin animación íconos sociales junto al logo */
   /* Fin animaciones */
 
   /*  Media querys */
