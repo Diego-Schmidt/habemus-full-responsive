@@ -65,7 +65,7 @@ header {
   }
 
 .cabeza {
-    background: #be7e07b4;
+    background: #be7e07e5;
     position: relative;
     /* display: flex;
     align-items: center;
@@ -136,8 +136,8 @@ header {
 }
 
 .headlogbg{
-    background: rgb(221,198,18);
-background: radial-gradient(circle, rgba(221,198,18,1) 0%, rgba(221,133,18,0.7399334733893557) 35%, rgba(226,98,6,0.5746673669467788) 100%);
+    background: rgb(221, 157, 18);
+background: radial-gradient(circle, rgba(221,198,18,1) 0%, rgba(221, 133, 18, 0.884) 35%, rgba(226,98,6,0.5746673669467788) 100%);
 }
 
 #carrito{
