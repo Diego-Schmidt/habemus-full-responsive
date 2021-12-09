@@ -117,6 +117,18 @@ header {
 	font-size: 1rem;
     
 }
+.nav-link{
+    padding-top: 5%;
+}
+
+.headlogbg{
+    background: rgb(221,198,18);
+background: radial-gradient(circle, rgba(221,198,18,1) 0%, rgba(221,133,18,0.7399334733893557) 35%, rgba(226,98,6,0.5746673669467788) 100%);
+}
+
+#carrito{
+    padding-right: 30px;
+}
 
 /* Formulario bootstrap */
 li,h3{
@@ -239,8 +251,8 @@ li,h3{
   @media only screen 
   and (max-width : 466px) {
   .textoapp{
-    width:100%;
-    top: 40%;
+    width:60%;
+    top: 20%;
     left: 10%; 
   }
   
