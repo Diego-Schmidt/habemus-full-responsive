@@ -143,6 +143,9 @@ background: radial-gradient(circle, rgba(221,198,18,1) 0%, rgba(221, 133, 18, 0.
 #carrito{
     padding-right: 30px;
 }
+.mencatcol{
+background-color: #d06d03;
+}
 
 /* .wow {
   visibility: hidden;
@@ -228,7 +231,7 @@ li,h3{
         padding: 6px;
         animation: slide-in-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-    
+
 /* Fin formulario */
 
 /* Animaciones */
