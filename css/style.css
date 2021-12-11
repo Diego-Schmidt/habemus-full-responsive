@@ -214,10 +214,12 @@ li,h3{
     }
 
     .fa-arrow-alt-circle-up{
-        padding-left: 30px;
+        /* padding-left: 20px; */
         font-size: 30px;
         cursor: pointer;
         color: #000;
+        padding-right: 20px;
+        padding-bottom: 3px;
     }
     .arriba__link{
         text-decoration: none;
@@ -225,6 +227,10 @@ li,h3{
 
     .copy{
         padding-left: 30%;
+    }
+    .copy_text{
+      font-size: 0.5rem;
+      text-align: center;
     }
      
     .iconsoc{
@@ -416,6 +422,12 @@ and (max-width : 381px) {
 }
 
 }
+
+/* @media(max-width: 749px) {
+  .copy_text {
+  display: none;
+  }
+  } */
 
 @media(max-width: 1055px) {
     .pedionline {
