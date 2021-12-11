@@ -395,6 +395,16 @@ li,h3{
 }
 
 @media only screen 
+and (max-width : 393px) {
+.textoapp{
+  width:80%;
+  top: 15%;
+  left: 10%; 
+}
+
+}
+
+@media only screen 
 and (max-width : 381px) {
 .textoapp{
   width:80%;
