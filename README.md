@@ -1,2 +1,1 @@
-Creada rama "habemus full bootstrap" con todas las páginas html para la entrega del desafío coderhouse"
-Se tomó la base del master y se convirtió toda la estructura usando Boostrap 5
+Creada rama "habemus sass" para aplicar todo lo aprendido sobre sass en las clases de coderhouse
