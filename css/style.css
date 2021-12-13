@@ -5,11 +5,14 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-image: url(../assets/habemusdog.webp);
+	/* background-image: url(../assets/habemusdog.webp); */
+	background: rgb(232,176,55);
+	background: linear-gradient(7deg, rgba(232,176,55,1) 0%, rgba(250,193,86,1) 96%); 
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	font-family: 'Bakbak One', cursive;
 	/* animation: bodyan 5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both; */
 }
 
@@ -255,6 +258,7 @@ h3 {
 	text-align: center;
 }
 
+
 .iconsoc {
 	padding: 6px;
 	animation: slide-in-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -434,6 +438,8 @@ h3 {
   
 } */
 
+/* Media queries no standard */
+
 @media only screen and (max-width: 621px) {
 	.textoapp {
 		width: 70%;
@@ -447,6 +453,10 @@ h3 {
 		width: 80%;
 		top: 15%;
 		left: 10%;
+	}
+
+	.iconossoc{
+		padding-right: 10%;
 	}
 }
 
@@ -476,3 +486,54 @@ h3 {
 		font-size: 1rem;
 	}
 }
+
+/* Media queries standard */
+
+/* Dispositivos pequeños (landscape phones, 576px and up) */
+
+@media (min-width: 576px) { 
+
+	.iconossoc{
+		padding-right: 8%;
+	}
+
+ }
+
+/* Dispositivos medianos (tablets, 768px and up) */
+
+@media (min-width: 768px) { 
+
+	.iconossoc{
+		padding-right: 4%;
+	}
+
+ }
+
+/* Dispositivos grandes (desktops, 992px and up) */
+
+@media (min-width: 992px) { ... }
+
+/* Dispositivos muy grandes (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) { ... }
+
+
+@media (max-width: 575.98px) { 
+
+	.iconossoc{
+		padding-right: 9%;
+	}
+
+ }
+
+/* Dispositivos pequeños (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) { ... }
+
+/* Dispositivos medianos (tablets, less than 992px) */
+
+@media (max-width: 991.98px) { ... }
+
+/* Dispositivos grandes (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) { ... }
