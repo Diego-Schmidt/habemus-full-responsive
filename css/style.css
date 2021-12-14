@@ -455,9 +455,9 @@ h3 {
 		left: 10%;
 	}
 
-	.iconossoc{
+	/* .iconossoc{
 		padding-right: 10%;
-	}
+	} */
 }
 
 @media only screen and (max-width: 381px) {
@@ -493,9 +493,9 @@ h3 {
 
 @media (min-width: 576px) { 
 
-	.iconossoc{
+	/* .iconossoc{
 		padding-right: 8%;
-	}
+	} */
 
  }
 
@@ -503,9 +503,9 @@ h3 {
 
 @media (min-width: 768px) { 
 
-	.iconossoc{
+	/* .iconossoc{
 		padding-right: 4%;
-	}
+	} */
 
  }
 
@@ -520,9 +520,9 @@ h3 {
 
 @media (max-width: 575.98px) { 
 
-	.iconossoc{
+	/* .iconossoc{
 		padding-right: 9%;
-	}
+	} */
 
  }
 
