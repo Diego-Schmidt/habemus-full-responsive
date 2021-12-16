@@ -1,0 +1,84 @@
+// contacto
+
+h3 {
+    color: $color5;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .form-control {
+    line-height: 2;
+  }
+  
+  .bg-custom {
+    background-color: $color6;
+  }
+  
+  .bg-custom2 {
+    background-color: $color26;
+  }
+  
+  .btn-custom {
+    background-color: $color7;
+    color: $color5;
+  
+    &:hover {
+      background-color: $color8;
+      color: $color5;
+    }
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  
+    .fa {
+      font-size: 50px;
+      padding-bottom: 20px;
+      cursor: pointer;
+    }
+  }
+  
+  .fa:hover {
+    transform: scale(1.3);
+    transition: .6s;
+  }
+  
+  .fa-facebook {
+    color: $color9;
+  }
+  
+  .fa-twitter {
+    color: $color10;
+  }
+  
+  .fa-instagram {
+    color: $color11;
+  }
+  
+  .fa-linkedin {
+    color: $color12;
+  }
+  
+  .fa-pinterest {
+    color: $color13;
+  }
+  
+  .info li {
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .fa-arrow-alt-circle-up {
+    font-size: 30px;
+    cursor: pointer;
+    color: $color14;
+    padding-right: 20px;
+    padding-bottom: 3px;
+  }
+
+  // fin contacto

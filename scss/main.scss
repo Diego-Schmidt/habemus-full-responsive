@@ -1,7 +1,6 @@
-@import "animaciones.scss";
-@import "colores.scss";
-@import "formularios.scss";
-
+@import "_colores.scss";
+@import "_formularios.scss";
+@import "_animaciones.scss";
 * {
     margin: 0;
     padding: 0;
@@ -151,31 +150,7 @@
     background-color: $color4;
   }
   
-  h3 {
-    color: $color5;
-    font-size: 32px;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .form-control {
-    line-height: 2;
-  }
-  
-  .bg-custom {
-    background-color: $color6;
-  }
-  
-  .bg-custom2 {
-    background-color: $color26;
-  }
-  
-  .btn-custom {
-    background-color: $color27;
-    color: $color5;
-  
-    &:hover {
-      background-color: $color8;
-      color: $color5;
-    }
+  .iconsoc {
+    padding: 6px;
+    animation: slide-in-top 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
