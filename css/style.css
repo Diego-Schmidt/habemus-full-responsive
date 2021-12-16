@@ -5,7 +5,6 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	/* background-image: url(../assets/habemusdog.webp); */
 	background: rgb(232,176,55);
 	background: linear-gradient(7deg, rgba(232,176,55,1) 0%, rgba(250,193,86,1) 96%); 
 	background-attachment: fixed;
@@ -13,7 +12,6 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: 'Bakbak One', cursive;
-	/* animation: bodyan 5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both; */
 }
 
 header {
@@ -21,6 +19,11 @@ header {
 	clear: both;
 	height: 20px;
 	display: table;
+}
+
+.btn-group-sm > .btn, .btn-sm{
+
+	background-color: beige!important;
 }
 
 .kbcar {
@@ -66,19 +69,11 @@ header {
 .cabeza {
 	background: #be7e07e5;
 	position: relative;
-	/* display: flex;
-    align-items: center;
-    align-content: space-around;
-    justify-content: center; */
 }
 
 .pie {
 	background: #be7e07;
 	position: relative;
-	/* display: flex;
-    align-items: center;
-    align-content: space-around;
-    justify-content: center; */
 }
 
 .bg-light {
@@ -151,20 +146,8 @@ header {
 	background-color: #d06d03;
 }
 
-
-/* .wow {
-  visibility: hidden;
-} */
-
-
-/* Formulario bootstrap */
-
-li,
 h3 {
 	color: #fff;
-}
-
-h3 {
 	font-size: 32px;
 	font-weight: bold;
 	margin: 0;
@@ -427,17 +410,6 @@ h3 {
 
 /*  Media querys */
 
-
-/* @media only screen 
-  and (min-width : 467px) {
-  .textoapp{
-    width:70%;
-    top: 40%;
-    left: 10%; 
-  }
-  
-} */
-
 /* Media queries no standard */
 
 @media only screen and (max-width: 621px) {
@@ -454,10 +426,6 @@ h3 {
 		top: 15%;
 		left: 10%;
 	}
-
-	/* .iconossoc{
-		padding-right: 10%;
-	} */
 }
 
 @media only screen and (max-width: 381px) {
@@ -468,72 +436,12 @@ h3 {
 	}
 }
 
-
-/* @media(max-width: 749px) {
-  .copy_text {
-  display: none;
-  }
-  } */
-
 @media(max-width: 1055px) {
 	.pedionline {
 		padding: 0;
 	}
-	/* .copy{
-        display: block;
-    } */
 	.centrado {
 		font-size: 1rem;
 	}
 }
 
-/* Media queries standard */
-
-/* Dispositivos pequeños (landscape phones, 576px and up) */
-
-@media (min-width: 576px) { 
-
-	/* .iconossoc{
-		padding-right: 8%;
-	} */
-
- }
-
-/* Dispositivos medianos (tablets, 768px and up) */
-
-@media (min-width: 768px) { 
-
-	/* .iconossoc{
-		padding-right: 4%;
-	} */
-
- }
-
-/* Dispositivos grandes (desktops, 992px and up) */
-
-@media (min-width: 992px) { ... }
-
-/* Dispositivos muy grandes (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) { ... }
-
-
-@media (max-width: 575.98px) { 
-
-	/* .iconossoc{
-		padding-right: 9%;
-	} */
-
- }
-
-/* Dispositivos pequeños (landscape phones, less than 768px) */
-
-@media (max-width: 767.98px) { ... }
-
-/* Dispositivos medianos (tablets, less than 992px) */
-
-@media (max-width: 991.98px) { ... }
-
-/* Dispositivos grandes (desktops, less than 1200px) */
-
-@media (max-width: 1199.98px) { ... }
