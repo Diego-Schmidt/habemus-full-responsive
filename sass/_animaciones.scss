@@ -1,0 +1,122 @@
+// Animaciones
+
+// keyframes para la animación del logo
+
+@keyframes logo-left {
+    0% {
+      transform: translateX(-1000px) rotate(-720deg);
+      filter: blur(50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0) rotate(0deg);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+  // fin keyframes animación logo
+  
+  
+  //  Animación íconos sociales junto al logo
+  
+  @-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  //  Fin animación íconos sociales junto al logo
+  
+  // Animación carrusel portada 1
+  
+  @-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+      transform-origin: 50% 16%;
+    }
+  
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+      transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+    }
+  }
+  
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+      transform-origin: 50% 16%;
+    }
+  
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+      transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+    }
+  }
+  
+  // Animación imagen carrusel portada 2 
+  
+  @-webkit-keyframes kenburns-bottom-right {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+      transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 84% 84%;
+      transform-origin: 84% 84%;
+    }
+  
+    100% {
+      -webkit-transform: scale(1.25) translate(20px, 15px);
+      transform: scale(1.25) translate(20px, 15px);
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+    }
+  }
+  
+  @keyframes kenburns-bottom-right {
+    0% {
+      -webkit-transform: scale(1) translate(0, 0);
+      transform: scale(1) translate(0, 0);
+      -webkit-transform-origin: 84% 84%;
+      transform-origin: 84% 84%;
+    }
+  
+    100% {
+      -webkit-transform: scale(1.25) translate(20px, 15px);
+      transform: scale(1.25) translate(20px, 15px);
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+    }
+  }
+  
+  // Fin animaciones
