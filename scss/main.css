@@ -220,6 +220,10 @@ header {
   display: table;
 }
 
+.heroportada {
+  background-image: url(../assets/heroportada.png);
+}
+
 .btn-group-sm > .btn, .btn-sm {
   background-color: beige !important;
 }
