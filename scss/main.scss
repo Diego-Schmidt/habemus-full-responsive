@@ -1,20 +1,20 @@
 @import "_colores.scss";
 @import "_formularios.scss";
 @import "_animaciones.scss";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 * {
     margin: 0;
     padding: 0;
   }
   
   body {
-    font-family: 'Montserrat', sans-serif;
     // background: $color18;
     // background: $color19;
     // background-attachment: fixed;
     // background-position: center;
     // background-repeat: no-repeat;
     // background-size: cover;
-    font-family: 'Bakbak One', cursive;
+    font-family: 'Comfortaa', cursive;
   }
   
   header {
