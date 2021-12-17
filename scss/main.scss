@@ -1,7 +1,6 @@
 @import "_colores.scss";
 @import "_formularios.scss";
 @import "_animaciones.scss";
-@import "_carousel.scss"
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +8,12 @@
   
   body {
     font-family: 'Montserrat', sans-serif;
-    background: $color18;
-    background: $color19;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background: $color18;
+    // background: $color19;
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     font-family: 'Bakbak One', cursive;
   }
   
