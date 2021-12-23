@@ -32,3 +32,12 @@ $color25: radial-gradient(circle, rgba(221, 198, 18, 1) 0%, rgba(221, 133, 18, 0
 $color26: hsl(24, 74%, 53%);
 $color27: #d6a03b;
 $color28: #d07f16;
+
+// Agregamos gradientes en forma de map
+
+$gradientes: (
+  gradiente1: linear-gradient(7deg, rgba(232, 176, 55, 1) 0%, rgba(250, 193, 86, 1) 96%),
+  gradiente2: radial-gradient(circle, rgba(221, 198, 18, 1) 0%, rgba(221, 133, 18, 0.884) 35%, rgba(226, 98, 6, 0.5746673669) 100%),
+  gradiente3: linear-gradient(7deg, rgb(105, 76, 13) 0%, rgba(250, 193, 86, 1) 96%)
+);
+

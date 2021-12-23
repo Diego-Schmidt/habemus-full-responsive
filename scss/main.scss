@@ -1,4 +1,5 @@
 @import "_colores.scss";
+@import "_mixins.scss";
 @import "_formularios.scss";
 @import "_animaciones.scss";
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
@@ -21,6 +22,20 @@
   .heroportada {
     background-image: url(../assets/heroportada.webp);
 
+  }
+
+  // Llamamos al mixin carritoprecio para darle efecto al contenedor
+
+  .carrpre {
+    @include carritoprecio;
+    font-size: 1rem;
+  }
+
+  .contenedorprecio{
+    background:#ffebee;
+    display:flex;
+    justify-content:center;
+    align-items:center;
   }
 
 // cambio de color fondo botones menú.html
@@ -136,9 +151,11 @@
     padding-top: 5%;
   }
   
+  // utilizamos el map-get para obtener el valor de un color gradiente del map en _colores.scss
+
   .headlogbg {
     background: $color24;
-    background: $color25;
+    background: map-get($gradientes, gradiente2);
   }
   
   #carrito {
