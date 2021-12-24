@@ -132,6 +132,13 @@
     top: 0;
     z-index: -1;
   }
+  
+  // se agrega un extend para cambiar el color de back1 y asignarlo a la página menu.html
+  .back1-2{
+    @extend .back1;
+    background-image: linear-gradient(-60deg, rgb(226, 154, 120) 50%, rgb(255, 72, 0) 50%);
+    
+}
   .back2 {
     animation-direction: alternate-reverse;
     animation-duration: 4s;
@@ -147,4 +154,5 @@
       transform: translateX(25%);
     }
   }
-// Fin animaciones
+
+  // Fin animaciones
