@@ -1,0 +1,5 @@
+---
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/diegoschmidt/public_html/habemus  # Add /<app_folder> if required
+        - /bin cp * $DEPLOYPATH                           #copy all from root 
